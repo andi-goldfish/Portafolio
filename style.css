@@ -3,7 +3,15 @@
 }
 
 #presentacion {
-    min-height: 94vh;
+    height: 91.5vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    background-image: url('assets/fondo2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 #icono {
@@ -16,4 +24,23 @@
 
 #icono3 {
     background-color: rgb(165, 61, 165);
+}
+
+#habilidad {
+    min-height: 30vh;
+}
+
+#proyectos{
+    min-height: 30vh;
+}
+
+#proyecto-1 {
+    background-image: url('image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.text-shadow-1 {
+    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
 }
