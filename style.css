@@ -3,15 +3,15 @@
 }
 
 #presentacion {
-    height: 91.5vh;
+    min-height: 95vh;
     display: flex;
     justify-content: start;
     align-items: center;
     
     background-image: url('fondo2.jpeg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position:center;
+    background-size:auto;
 }
 
 #icono {
@@ -27,11 +27,11 @@
 }
 
 #habilidad {
-    min-height: 30vh;
+    min-height: 20vh;
 }
 
 #proyectos{
-    min-height: 30vh;
+    min-height: 20vh;
 }
 
 #proyecto-1 {
@@ -43,4 +43,7 @@
 
 .text-shadow-1 {
     text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+}
+#contacto{
+    background-color: rgb(167, 103, 167)!important; 
 }
