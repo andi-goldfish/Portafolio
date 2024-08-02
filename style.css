@@ -3,7 +3,7 @@
 }
 
 #presentacion {
-    min-height: 95vh;
+    min-height: 70vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -46,4 +46,7 @@
 }
 #contacto{
     background-color: rgb(167, 103, 167)!important; 
+}
+#boton{
+    background-color: rgb(167, 103, 167)!important;
 }
