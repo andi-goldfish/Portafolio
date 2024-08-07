@@ -10,18 +10,30 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Rubik:ital@0;1&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
+    <audio id="miAudio" autoplay>
+        <source src="assets/music/under.mp3" type="audio/mpeg">
+    </audio>
+
     <header>
+        
+
         <nav class="navbar fixed-top navbar-expand-lg bg-primary " data-bs-theme="dark" id="navbar">
-            
-            <div class="container">
-                <a class="navbar-brand" href="#presentacion">Andrea</a>
+            <div class="container justify-content-start">
+                <a class="navbar-brand " href="#presentacion">Andrea</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -36,6 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#contacto">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <button id="pauseButton">Pausar</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -43,34 +58,55 @@
     </header>
 
     <main class="mb-5 bg-body-secondary ">
-        <section id="presentacion" class="container-fluid">
-            
-            <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
-                <div class="row flex-lg-row align-items-center g-5 py-5">
-                    <div class="col-lg">
-                        <h1 class="display-5 fw-bold text-white text-shadow-1 lh-1 mb-3  ">Andrea López Cruz
-                        </h1>
-                        <p class="lead text-white text-shadow-1 ">Desarrolladora. sjsjsjsjsjsjsjsjsj </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button id="boton" class="btn  btn-lg px-4 me-md-2">Contáctame</button>
-                            <button type="button" id="bot2" 
-                                class="btn  btn-secondary position-relative btn-lg px-4">andylc378@gmail.com
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    99+
-                                    <span class="visually-hidden">unread messages
-                                    </span>
-                                </span>
-                               
-                            </button>
+        <section  class="container-fluid">
+                    <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+                        <div class="row flex-lg-row align-items-center g-5 py-5">
+                            <div class="img-banner" id="bot2">
+                                <img id="andi" class="rounded-circle my-5" src="assets/andi.jpeg" alt="Foto de andi">
+                                <div class="col-lg">
+                                    <h1 id="app"
+                                        class=" display-5 fw-bold text-white text-shadow-1 lh-1 mb-5 rubik-dirt-regular">
+                                        Hola, soy Andrea López Cruz!
+                                    </h1>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                        <div id="icono6"
+                                            class="icon-square   d-inline-flex align-items-center justify-content-center fs-4 px-3 py-2 rounded mx-3 my-2">
+                                            <a href="https://github.com/andi-goldfish" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="bi bi-gitlab fs-1 text-black"></i>
+                                            </a>
+                                        </div>
+                                        <div id="icono6"
+                                            class="icon-square  d-inline-flex align-items-center justify-content-center fs-4 px-3 py-2 rounded mx-3 my-2">
+                                            <a href="https://x.com/andyLC2020" target="_blank" rel="noopener noreferrer">
+                                                <i class="bi bi-twitter fs-1 text-info"></i>
+                                            </a>
+                                        </div>
+                                        <div id="icono6"
+                                            class="icon-square   d-inline-flex align-items-center justify-content-center fs-4 px-3 py-2 rounded mx-3 my-2">
+                                            <a href="https://www.instagram.com/anndy.cl/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="bi bi-instagram fs-1 text-danger-emphasis"></i>
+                                            </a>
+                                        </div>
+                                        <div id="icono6"
+                                            class="icon-square  d-inline-flex align-items-center justify-content-center fs-4 px-3 py-2 rounded mx-3 my-2">
+                                            <a href="mailto:andreaesime.azca@gmail.com" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i type="button" id="bot2" class="bi bi-envelope fs-1 text-primary-emphasis">
+                                                </i>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
         </section>
-
+        
         <section id="habilidad" class="container px-4 py-5 ">
-            
+
             <h2 class="pb-2 border-bottom">Habilidades</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col  align-items-start">
@@ -115,6 +151,34 @@
             <h2 class="pb-2 border-bottom">Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div id="proyecto-1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <img src="assets/icono.webp" alt="google" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                    <a class="link-light" href="https://clon-google-theta.vercel.app/">click aquí</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> League of Legends</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <img src="assets/lol.jpg" alt="lol" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col">
                     <div id="proyecto-1" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
@@ -122,7 +186,7 @@
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="mx-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    <img src="assets/icono.webp" alt="Bootstrap" width="32" height="32"
                                         class="rounded-circle border border-white">
                                 </li>
                             </ul>
@@ -130,6 +194,25 @@
                     </div>
                 </div>
             </div>
+            <div class="row row-cols-1 row-cols-lg-1 align-items-stretch g-4 py-2">
+                <div class="col">
+                    <div id="proyecto-8" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Clon de Google</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <img src="assets/icono.webp" alt="google" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                    <a class="link-light" href="https://clon-google-theta.vercel.app/">click aquí</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
         </section>
 
         <section id="testimonios">
@@ -148,43 +231,33 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <article class="container py-5 text-center px-5">
-                            <img class="rounded-5"
-                                src="data:image/jpeg;base64,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"
-                                height="200" alt="gato">
-                            <h2 class="my-3">Gato</h2>
-                            <p class="px-5">gato naranja Trabajar con [Tu Nombre] ha sido una experiencia excepcional.
-                                Desde el primer momento, demostró un profundo conocimiento en [campo o habilidad
-                                específica]. Durante el proyecto de [nombre o descripción del proyecto], [Tu Nombre]
-                                mostró habilidades sobresalientes en [detalles específicos, como desarrollo de software,
-                                diseño, gestión de proyectos, etc.]</p>
+                            <img id="marco" class="rounded-circle my-5" src="assets/marco.jpg" height="200" alt="gato">
+                            <h2 class="my-3">Marco Antonio Gonzalez Castillo</h2>
+                            <p class="px-5">Mi nombre es Marco, soy dueño de una cadena de cafeterías, tuve el gusto de
+                                conocer a Andrea ya que trabajó un año en las cafeterías, ella tiene muy buena
+                                disposición para aprender tanto a preparar alimentos como en atención al cliente; sabe
+                                trabajar en equipo y siempre con muy buena presentación.
+
+                            </p>
                         </article>
                     </div>
 
                     <div class="carousel-item">
                         <article class="container py-5 text-center px-5">
-                            <img class="rounded-5"
-                                src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=612"
-                                height="215" alt="gato">
-                            <h2 class="my-3">Gato</h2>
-                            <p class="px-5">gato naranja Trabajar con [Tu Nombre] ha sido una experiencia excepcional.
-                                Desde el primer momento, demostró un profundo conocimiento en [campo o habilidad
-                                específica]. Durante el proyecto de [nombre o descripción del proyecto], [Tu Nombre]
-                                mostró habilidades sobresalientes en [detalles específicos, como desarrollo de software,
-                                diseño, gestión de proyectos, etc.]</p>
+                            <img class="rounded-circle my-5" src="assets/litzi.jpeg" height="215" alt="gato">
+                            <h2 class="my-3">Litzi Sánchez. Mentora Técnica en Tecnolochicas.</h2>
+                            <p class="px-5">Andrea ha demostrado ser una alumna responsable y muy creativa durante el
+                                curso. Su interés por aprender la motiva a mejorar con cada proyecto que realiza.
+                            </p>
                         </article>
                     </div>
 
                     <div class="carousel-item">
                         <article class="container py-5 text-center px-5">
-                            <img class="rounded-5"
-                                src="https://ca-times.brightspotcdn.com/dims4/default/796e6c9/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001"
-                                height="200" alt="gato">
-                            <h2 class="my-3">Gato</h2>
-                            <p class="px-5">gato naranja Trabajar con [Tu Nombre] ha sido una experiencia excepcional.
-                                Desde el primer momento, demostró un profundo conocimiento en [campo o habilidad
-                                específica]. Durante el proyecto de [nombre o descripción del proyecto], [Tu Nombre]
-                                mostró habilidades sobresalientes en [detalles específicos, como desarrollo de software,
-                                diseño, gestión de proyectos, etc.]</p>
+                            <img id="angel" class="rounded-circle my-5" src="assets/angel.jpeg" height="200" alt="gato">
+                            <h2 class="my-3">Angel Miranda</h2>
+                            <p class="px-5">Trabajé con Andrea seis meses en una papelería, siempre muy amable y atenta
+                                con disposición de aprender y apoyar.</p>
                         </article>
                     </div>
                 </div>
@@ -204,6 +277,7 @@
     </main>
 
     <footer id="contacto" class="container-fluid  bg-body-secondary" data-bs-theme="dark">
+
         <div class="py-1">
             <div class="text-center fs-5 my-1 text-light">
                 <i class="bi bi-star-fill"></i>
@@ -222,11 +296,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" target="_blank" class="nav-link px-2 text-body-secondary">
+                    <a href="mailto:andreaesime.azca@gmail.com" target="_blank"
+                        class="nav-link px-2 text-body-secondary">
                         <i class="bi bi-envelope fs-3 text-primary-emphasis"></i>
                     </a>
                 </li>
                 <li class="nav-item">
+
                     <a href="https://x.com/andyLC2020" target="_blank" class="nav-link px-2 text-body-secondary">
                         <i class="bi bi-gitlab fs-3 text-black"></i>
                     </a>
@@ -241,6 +317,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">
+    </script>
+
+    <script src="script.js">
+    </script>
 
 </body>
 

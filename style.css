@@ -2,17 +2,24 @@
     background-color: rgb(167, 103, 167) !important;
 }
 
+#andi{
+    width: 200px;
+    height: 200px;
+    border: 6px solid rgb(170, 45, 114);
+    vertical-align: middle;
+}
 #presentacion {
-    min-height: 70vh;
+    min-height: 95vh;
     display: flex;
     justify-content: start;
     align-items: center;
     
-    background-image: url('fondo2.jpeg');
+    background-image: url('assets/fondo2.jpeg');
     background-repeat: no-repeat;
     background-position:center;
     background-size:auto;
-}
+}  
+
 
 #icono {
     background-color: rgb(190, 130, 190);
@@ -26,6 +33,10 @@
     background-color: rgb(165, 61, 165);
 }
 
+#icono6{
+    background-color: rgb(170, 45, 114); 
+}
+
 #habilidad {
     min-height: 20vh;
 }
@@ -35,10 +46,10 @@
 }
 
 #proyecto-1 {
-    background-image: url('image.png');
+    background-image: url('assets/google.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: contain;
 }
 
 .text-shadow-1 {
@@ -49,4 +60,22 @@
 }
 #boton{
     background-color: rgb(167, 103, 167)!important;
+}
+/* #proyecto-8 {
+    background-image: url('assets/fondo2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+} */
+#marco{
+    width: 200px;
+    height: 200px;
+    border: 8px solid rgb(170, 45, 114);
+    vertical-align: middle;
+}
+#angel{
+    width: 200px;
+    height: 200px;
+    border: 8px solid rgb(170, 45, 114);
+    vertical-align: middle;
 }
