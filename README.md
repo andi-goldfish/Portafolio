@@ -10,7 +10,12 @@ La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye
 
 ## Secciones de mi sitio
 
-![Presentacion]()
+
+![Presentacion](assets/readme/p1.jpeg)
+![Habilidades](assets/readme/p2.jpeg)
+![Proyectos](assets/readme/p3.jpeg)
+![Testimonios y contacto](assets/readme/p4.jpeg)
+
 
 ## Tecnologías
 
@@ -21,4 +26,4 @@ La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye
 
 ---
 
-Desarrollado con <3 por Andrea López en [Technolochicas Pro.](https://tecnolochicas.mx/)
+Desarrollado con <3 por [Andrea López](https://www.instagram.com/anndy.cl/) en [Technolochicas Pro.](https://tecnolochicas.mx/)

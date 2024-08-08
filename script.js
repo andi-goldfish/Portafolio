@@ -14,7 +14,7 @@ typewriter
     .typeString('Hola, soy Andrea López')
     .pauseFor(300)
     .deleteAll()
-    .typeString('Desarrolladora Frontend Jr.')
+    .typeString('Desarrolladora Front-end Jr.')
     .pauseFor(1000)
     .start();
 

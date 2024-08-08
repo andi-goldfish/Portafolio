@@ -22,16 +22,14 @@
 
 
 #icono {
-    background-color: rgb(190, 130, 190);
+    background-color: rgb(211, 125, 211);
 }
 
 #icono2 {
-    background-color: rgb(180, 98, 180);
+    background-color: rgb(235, 142, 235);
 }
 
-#icono3 {
-    background-color: rgb(165, 61, 165);
-}
+
 
 #icono6{
     background-color: rgb(170, 45, 114); 
@@ -47,6 +45,18 @@
 
 #proyecto-1 {
     background-image: url('assets/google.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#proyecto-2 {
+    background-image: url('assets/lol1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#proyecto-3 {
+    background-image: url('assets/veggie.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
