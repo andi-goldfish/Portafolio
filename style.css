@@ -13,12 +13,26 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    
+    animation: animate 15s infinite;
     background-image: url('assets/fondo2.jpeg');
     background-repeat: no-repeat;
     background-position:center;
     background-size:auto;
 }  
+@keyframes animate {
+    20% {
+      background-image: url('assets/fondo4.jpeg');
+      background-size: cover;
+    }
+    40% {
+      background-image: url('assets/fondo1.png');
+      background-size: cover;
+    }
+    70% {
+      background-image: url('assets/fondo3.jpg');
+      background-size: cover;
+    }
+  }
 
 
 #icono {
